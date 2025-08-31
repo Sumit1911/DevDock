@@ -20,11 +20,17 @@
   "author": "Your Name",
   "license": "MIT",
   "dependencies": {
+    "@google/genai": "^1.16.0",
     "@google/generative-ai": "^0.21.0",
     "@octokit/rest": "^21.0.2",
+    "child_process": "^1.0.2",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security",
+    "os": "^0.1.2",
+    "path": "^0.12.7",
+    "util": "^0.12.5"
   },
   "devDependencies": {
     "nodemon": "^3.1.4"
