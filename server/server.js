@@ -7,6 +7,7 @@ import path from "path";
 
 import express from "express";
 import cors from "cors";
+import { env } from "process";
 
 const app = express();
 const PORT = 5000;
@@ -31,7 +32,8 @@ const platform = os.platform();
 const asyncExecute = promisify(exec);
 
 const History = [];
-const ai = new GoogleGenAI({ apiKey: "AIzaSyBRazK7fUrcZYrbjmWWDYBBkpTRN-J8Ql8" });
+const apiKey = process.env.GEMINI_API_KEY;
+const ai = new GoogleGenAI({ apiKey: apiKey});
 
 // Store the current project name
 let currentProjectName = '';
